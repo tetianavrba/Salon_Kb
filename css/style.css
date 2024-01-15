@@ -1,15 +1,13 @@
-/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display:1,300,400,400italic,500,700,700italic,900'); */
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
 * {
-    /* font-family: 'Lobster', sans-serif; */
     font-family: 'Montserrat', sans-serif;
-    /* font-family: 'PT Sans', sans-serif; */
-    /* 'Playfair Display', sans-serif; */
+    font-weight: 400;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,15 +18,16 @@
     color: #444
 }
 
+h1,
+h3 {
+    font-size: 30px;
+    margin: 20px 0 20px;
+}
+
 h2 {
     font-size: 30px;
     text-align: center;
     margin: 30px;
-}
-
-h3 {
-    font-size: 30px;
-    margin: 20px 0 20px;
 }
 
 h4 {
@@ -62,6 +61,8 @@ h4 {
     max-width: 150px;
     height: auto;
 }
+
+/* Hamburger */
 
 .header .navbar #close-navbar {
     position: absolute;
@@ -98,9 +99,13 @@ h4 {
 .home {
     min-height: 500px;
     display: flex;
-    background: url(../images/interier_1.jpg) no-repeat;
-    background-size: cover;
+    /* background: url(../images/interier_1.jpg) no-repeat; */
+    background: url(../images/8733.jpg) no-repeat;
+    min-height: 500px;
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home-container {
@@ -123,7 +128,8 @@ h4 {
     line-height: 3.5rem;
     color: #d9c4bf;
     margin-top: 120px;
-
+    margin-bottom: 50px;
+    font-weight: 500;
 }
 
 .content-box_share a {
@@ -153,7 +159,6 @@ h4 {
 
 .button {
     margin-top: 10px;
-    padding: 10px;
     background-color: #d9c4bf;
     padding: 10px 25px;
     border-radius: 10px;
@@ -172,10 +177,11 @@ h4 {
     margin: auto;
 }
 
-
 .content_text {
     font-size: 20px;
+    line-height: 2rem;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .row {
@@ -184,6 +190,9 @@ h4 {
 }
 
 .foto-container {
+    width: 70vw;
+    margin: auto;
+    /* background-color: rgba(213, 196, 191, 0.7); */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -199,9 +208,11 @@ h4 {
 }
 
 .foto img {
-    width: 250px;
-    height: 327px;
+
+    height: 274px;
+    margin: 10px;
 }
+
 
 .foto h3 {
     margin: 5px;
@@ -232,7 +243,6 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 25px;
     width: 70vw;
     margin: auto;
     line-height: 35px;
@@ -245,8 +255,16 @@ h4 {
 .contact-info_telephone {
     width: 1.5rem;
     height: 1.5rem;
-    margin: 0 10px 0 10px;
+    margin: 0 10px -5px 10px;
+}
 
+.contact-info_bolt {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact-location_mapa iframe {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* kontakty */
@@ -340,6 +358,11 @@ main {
     h2 {
         font-size: 30px;
     }
+
+    .contact-location_mapa iframe {
+        width: 300px;
+        height: 225px;
+    }
 }
 
 
@@ -352,6 +375,8 @@ main {
 .services-container {
     margin: 40px 0 40px;
     text-align: left;
+    box-shadow: 15px 15px 15px #d9c4bf;
+
 }
 
 .services-container_title {
@@ -360,6 +385,11 @@ main {
     font-size: 22px;
 }
 
+.services-container_table .services-container_title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px 0 10px;
+}
 
 .services span {
     font-size: 12px;
@@ -378,31 +408,40 @@ main {
     padding: 8px;
 }
 
-.cenik-dodatek {
+.note {
     color: red;
+    padding: 10px 0 10px;
+    font-size: 12px;
 }
 
 /* Footer */
 footer {
-    height: 150px;
+    height: 200px;
     background-color: #444;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 10px;
     width: 70vw;
     margin: auto;
 }
 
+.footer-box {
+    text-align: center;
+}
+
 .footer-container p {
-    padding: 10px 0 10px 0;
+    padding: 8px 0 8px 0;
     color: #d9c4bf;
 }
 
-.footer-text {
+.footer-box_text {
     font-size: 20px;
+}
+
+.footer-conditions {
+    display: flex;
+    align-items: center;
 }
 
 .footer-text_protection {
@@ -419,4 +458,16 @@ footer {
 .footer-text_copyright {
     font-size: 14px;
     color: #d9c4bf;
+    margin-right: 30px;
+}
+
+/* ....404..... */
+.error {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.error p {
+    font-size: 30px;
+    padding-bottom: 100px;
 }
