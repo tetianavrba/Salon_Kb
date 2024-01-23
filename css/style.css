@@ -97,20 +97,17 @@ h4 {
 /* home */
 
 .home {
-    min-height: 500px;
+    height: 500px;
     display: flex;
-    /* background: url(../images/interier_1.jpg) no-repeat; */
-    background: url(../images/8733.jpg) no-repeat;
-    min-height: 500px;
+    background: url(../images/pexels-churckyno-bryant-1546035.jpg) no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .home-container {
     width: 100%;
-    background-color: rgba(45, 48, 55, 0.6);
+    /* background-color: rgba(45, 48, 55, 0.4); */
 }
 
 .content {
@@ -411,7 +408,7 @@ main {
 .note {
     color: red;
     padding: 10px 0 10px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 /* Footer */
@@ -441,7 +438,8 @@ footer {
 
 .footer-conditions {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+
 }
 
 .footer-text_protection {
