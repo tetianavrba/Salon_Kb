@@ -100,7 +100,7 @@ h4 {
     height: 500px;
     display: flex;
     background: url(../images/pexels-churckyno-bryant-1546035.jpg) no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
 }
